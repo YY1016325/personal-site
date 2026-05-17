@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="杨洋的个人网站，记录作品、想法和成长。" />
+    <title>杨洋 | 个人网站</title>
+    <link rel="stylesheet" href="styles.css?v=20260517-much-lighter-about-skills" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span>YangYang</span>
+      </a>
+
+      <nav class="nav-links" aria-label="主导航">
+        <a class="is-active" href="#home" data-nav-link>首页</a>
+        <a href="#work" data-nav-link>作品</a>
+        <a href="#about" data-nav-link>关于</a>
+        <a href="#skills" data-nav-link>技能</a>
+        <a href="#life" data-nav-link>生活</a>
+        <a href="#contact" data-nav-link>联系</a>
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <canvas id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <h1>
+            <span>Hello, I'm </span>
+            <strong>YangYang</strong>
+          </h1>
+          <p class="hero-role">我 <span data-rotating-text>热爱探索</span></p>
+        </div>
+
+        <a class="scroll-cue" href="#work" aria-label="向下滚动">
+          <span>向下滚动</span>
+          <i aria-hidden="true"></i>
+        </a>
+
+        <div class="hero-divider" aria-hidden="true">
+          <svg viewBox="0 0 1440 130" preserveAspectRatio="none">
+            <path
+              class="wave-back"
+              d="M0,76 C180,108 340,58 520,78 C700,98 860,112 1040,74 C1200,42 1320,78 1440,64 L1440,130 L0,130 Z"
+            ></path>
+            <path
+              class="wave-front"
+              d="M0,94 C180,64 360,104 540,88 C720,72 880,52 1060,82 C1220,110 1340,86 1440,72 L1440,130 L0,130 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section-band work-band" id="work">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Gallery</p>
+              <h2>作品集</h2>
+            </div>
+          </div>
+          <div class="portfolio-grid" aria-label="作品集图片">
+            <figure
+              class="portfolio-item"
+              data-realism-trigger
+              role="button"
+              tabindex="0"
+              aria-controls="realismDialog"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/portfolio/portfolio-01.png" alt="屋顶夕阳下的朋友们" />
+            </figure>
+            <figure
+              class="portfolio-item"
+              data-city-trigger
+              role="button"
+              tabindex="0"
+              aria-controls="cityDialog"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/portfolio/portfolio-04.png" alt="夜色上海与发光花朵" />
+            </figure>
+            <figure
+              class="portfolio-item"
+              data-product-trigger
+              role="button"
+              tabindex="0"
+              aria-controls="productDialog"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/portfolio/portfolio-05.png" alt="Xiaomi Buds 产品海报" />
+            </figure>
+            <figure
+              class="portfolio-item"
+              data-drink-trigger
+              role="button"
+              tabindex="0"
+              aria-controls="drinkDialog"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/portfolio/portfolio-06.png" alt="广告视觉作品" />
+            </figure>
+            <figure
+              class="portfolio-item"
+              data-beverage-trigger
+              role="button"
+              tabindex="0"
+              aria-controls="beverageDialog"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/portfolio/portfolio-07.png" alt="饮料广告视觉作品" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band about-band" id="about">
+        <div class="section-inner about-layout">
+          <div class="about-intro">
+            <p class="eyebrow">About · 关于我</p>
+            <h2>杨洋</h2>
+            <p class="lead">
+              AI 训练师 · 数据标注
+            </p>
+            <p class="about-summary">
+              专注于大模型数据标注、评测与自动化工作流，参与过文生图、电商、客服等领域的模型项目。
+            </p>
+          </div>
+          <div class="principle-list">
+            <div class="principle is-featured">
+              <span>01</span>
+              <div>
+                <h3>多模态文生图评测专项</h3>
+                <p>评测标注员 · 质检</p>
+              </div>
+            </div>
+            <div class="principle">
+              <span>02</span>
+              <div>
+                <h3>电商海报 Caption 标注</h3>
+                <p>工具开发 · 数据标注</p>
+              </div>
+            </div>
+            <div class="principle">
+              <span>03</span>
+              <div>
+                <h3>智能客服 SFT 微调</h3>
+                <p>数据标注专员</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band skills-band" id="skills">
+        <div class="section-inner skills-layout">
+          <div class="skill-grid">
+            <article class="skill-item skill-item-featured">
+              <div class="skill-card-top">
+                <span class="skill-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 5h14v14H5z" />
+                    <path d="m5 5 14 14" />
+                    <path d="M19 5 5 19" />
+                  </svg>
+                </span>
+              </div>
+              <h3>自动化工作流</h3>
+              <p>用扣子、Codex、Claude 搭建流程</p>
+            </article>
+            <article class="skill-item">
+              <div class="skill-card-top">
+                <span class="skill-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 5h14v14H5z" />
+                    <path d="m5 5 14 14" />
+                    <path d="M19 5 5 19" />
+                  </svg>
+                </span>
+              </div>
+              <h3>数据标注</h3>
+              <p>文本、多模态标注与模型评测</p>
+            </article>
+            <article class="skill-item">
+              <div class="skill-card-top">
+                <span class="skill-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 5h14v14H5z" />
+                    <path d="m5 5 14 14" />
+                    <path d="M19 5 5 19" />
+                  </svg>
+                </span>
+              </div>
+              <h3>持续学习</h3>
+              <p>探索新工具、新技术并用于实践</p>
+            </article>
+          </div>
+          <div class="skills-header">
+            <p class="skills-kicker">Skills · 技能方向</p>
+            <h2>我主要做<br />这三件事</h2>
+            <p class="skills-subtitle">围绕数据、自动化和学习展开，互相支撑。</p>
+            <div class="skills-count" aria-label="3 个核心方向，持续更新中">
+              <strong>3</strong>
+              <span>个核心方向 · 持续更新中</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band notes-band" id="life">
+        <div class="section-inner">
+          <div class="life-gallery" aria-label="生活记录图片">
+            <figure class="life-card life-card-flip">
+              <div class="life-card-inner">
+                <div class="life-card-face life-card-front">
+                  <img src="assets/life/life-01.png" alt="My Portrait 生活记录 1" />
+                </div>
+                <div class="life-card-face life-card-back" aria-label="我的照片拼贴">
+                  <img src="assets/life/portrait-back-01.jpg" alt="我的照片 1" />
+                  <img src="assets/life/portrait-back-02.jpg" alt="我的照片 2" />
+                  <img src="assets/life/portrait-back-03.jpg" alt="我的照片 3" />
+                </div>
+              </div>
+            </figure>
+            <figure class="life-card life-card-flip life-card-cat">
+              <div class="life-card-inner">
+                <div class="life-card-face life-card-front">
+                  <img src="assets/life/life-02.png" alt="My Cat 生活记录 2" />
+                </div>
+                <div class="life-card-face life-card-back life-card-back-cat" aria-label="猫咪照片拼贴">
+                  <img src="assets/life/cat-back-01.jpg" alt="猫咪照片 1" />
+                  <img src="assets/life/cat-back-02.jpg" alt="猫咪照片 2" />
+                  <img src="assets/life/cat-back-03.jpg" alt="猫咪照片 3" />
+                  <img src="assets/life/cat-back-04.jpg" alt="猫咪照片 4" />
+                  <img src="assets/life/cat-back-05.jpg" alt="猫咪照片 5" />
+                </div>
+              </div>
+            </figure>
+            <figure class="life-card life-card-flip life-card-travel">
+              <div class="life-card-inner">
+                <div class="life-card-face life-card-front">
+                  <img src="assets/life/life-03.png" alt="My Travel 生活记录 3" />
+                </div>
+                <div class="life-card-face life-card-back life-card-back-travel" aria-label="旅行照片拼贴">
+                  <img src="assets/life/travel-back-01.jpg" alt="旅行照片 1" />
+                  <img src="assets/life/travel-back-02.jpg" alt="旅行照片 2" />
+                  <img src="assets/life/travel-back-03.jpg" alt="旅行照片 3" />
+                  <img src="assets/life/travel-back-04.jpg" alt="旅行照片 4" />
+                  <img src="assets/life/travel-back-05.jpg" alt="旅行照片 5" />
+                  <img src="assets/life/travel-back-06.jpg" alt="旅行照片 6" />
+                  <img src="assets/life/travel-back-07.jpg" alt="旅行照片 7" />
+                  <img src="assets/life/travel-back-08.jpg" alt="旅行照片 8" />
+                  <img src="assets/life/travel-back-09.jpg" alt="旅行照片 9" />
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact">
+        <div class="section-inner contact-layout">
+          <div class="contact-copy">
+            <p class="contact-kicker">欢迎来信</p>
+            <h2>
+              一起聊聊语言、模型与<br />
+              那些尚未被回答的问题
+            </h2>
+          </div>
+          <div class="contact-list" aria-label="联系方式">
+            <div class="contact-row">
+              <span class="contact-label">
+                邮箱
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </span>
+              <span class="contact-value">
+                <strong>2975274095@qq.com</strong>
+                <button class="copy-button" type="button" data-copy-value="2975274095@qq.com" aria-label="复制邮箱" title="复制邮箱">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="9" y="9" width="11" height="11" rx="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                </button>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">
+                电话
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.09 9.87a16 16 0 0 0 6 6l1.23-1.23a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              <span class="contact-value">
+                <strong>18834211181</strong>
+                <button class="copy-button" type="button" data-copy-value="18834211181" aria-label="复制电话" title="复制电话">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="9" y="9" width="11" height="11" rx="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                </button>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">
+                微信
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9.5 18.5a8 8 0 0 1-2.64-.44L3 20l1.19-3.08A7 7 0 0 1 2 12c0-3.87 3.58-7 8-7 3.54 0 6.54 2.01 7.59 4.79" />
+                  <path d="M14.5 10c4.14 0 7.5 2.69 7.5 6 0 1.59-.78 3.03-2.05 4.1L21 23l-3.32-1.56c-.96.36-2.04.56-3.18.56-4.14 0-7.5-2.69-7.5-6s3.36-6 7.5-6z" />
+                  <path d="M7.5 10.25h.01" />
+                  <path d="M12.5 10.25h.01" />
+                  <path d="M12.25 15.75h.01" />
+                  <path d="M16.75 15.75h.01" />
+                </svg>
+              </span>
+              <span class="contact-value">
+                <strong>yang18834211181</strong>
+                <button class="copy-button" type="button" data-copy-value="yang18834211181" aria-label="复制微信号" title="复制微信号">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="9" y="9" width="11" height="11" rx="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="realism-dialog" id="realismDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="realismTitle">
+      <div class="realism-backdrop" data-realism-close></div>
+      <section class="realism-panel" tabindex="-1">
+        <div class="realism-panel-header">
+          <div>
+            <p class="eyebrow">Realism</p>
+            <h2 id="realismTitle">写实作品</h2>
+          </div>
+          <button class="realism-close" type="button" aria-label="关闭写实作品窗口" data-realism-close>×</button>
+        </div>
+        <div class="realism-gallery" aria-label="写实图片">
+          <img src="assets/realism/realism-01.png" alt="写实作品 1" />
+          <img src="assets/realism/realism-02.png" alt="写实作品 2" />
+          <img src="assets/realism/realism-03.png" alt="写实作品 3" />
+          <img src="assets/realism/realism-04.png" alt="写实作品 4" />
+          <img src="assets/realism/realism-05.png" alt="写实作品 5" />
+          <img src="assets/realism/realism-06.png" alt="写实作品 6" />
+          <img src="assets/realism/realism-07.png" alt="写实作品 7" />
+        </div>
+      </section>
+    </div>
+
+    <div class="realism-dialog" id="drinkDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drinkTitle">
+      <div class="realism-backdrop" data-drink-close></div>
+      <section class="realism-panel" tabindex="-1">
+        <div class="realism-panel-header">
+          <div>
+            <p class="eyebrow">Drinks</p>
+            <h2 id="drinkTitle">饮料作品</h2>
+          </div>
+          <button class="realism-close" type="button" aria-label="关闭饮料作品窗口" data-drink-close>×</button>
+        </div>
+        <div class="realism-gallery" aria-label="饮料图片">
+          <img src="assets/drinks/drink-01.png" alt="饮料作品 1" />
+          <img src="assets/drinks/drink-02.png" alt="饮料作品 2" />
+          <img src="assets/drinks/drink-03.png" alt="饮料作品 3" />
+          <img src="assets/drinks/drink-04.png" alt="饮料作品 4" />
+          <img src="assets/drinks/drink-05.png" alt="饮料作品 5" />
+          <img src="assets/drinks/drink-06.png" alt="饮料作品 6" />
+          <img src="assets/drinks/drink-07.png" alt="饮料作品 7" />
+          <img src="assets/drinks/drink-08.png" alt="饮料作品 8" />
+        </div>
+      </section>
+    </div>
+
+    <div class="realism-dialog" id="beverageDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="beverageTitle">
+      <div class="realism-backdrop" data-beverage-close></div>
+      <section class="realism-panel" tabindex="-1">
+        <div class="realism-panel-header">
+          <div>
+            <p class="eyebrow">Beverage</p>
+            <h2 id="beverageTitle">饮料作品</h2>
+          </div>
+          <button class="realism-close" type="button" aria-label="关闭饮料作品窗口" data-beverage-close>×</button>
+        </div>
+        <div class="realism-gallery" aria-label="饮料图片">
+          <img src="assets/beverages/beverage-01.png" alt="饮料作品 1" />
+          <img src="assets/beverages/beverage-02.png" alt="饮料作品 2" />
+          <img src="assets/beverages/beverage-03.png" alt="饮料作品 3" />
+          <img src="assets/beverages/beverage-04.png" alt="饮料作品 4" />
+          <img src="assets/beverages/beverage-05.png" alt="饮料作品 5" />
+          <img src="assets/beverages/beverage-06.png" alt="饮料作品 6" />
+          <img src="assets/beverages/beverage-07.png" alt="饮料作品 7" />
+          <img src="assets/beverages/beverage-08.png" alt="饮料作品 8" />
+          <img src="assets/beverages/beverage-09.png" alt="饮料作品 9" />
+        </div>
+      </section>
+    </div>
+
+    <div class="realism-dialog" id="cityDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cityTitle">
+      <div class="realism-backdrop" data-city-close></div>
+      <section class="realism-panel" tabindex="-1">
+        <div class="realism-panel-header">
+          <div>
+            <p class="eyebrow">City</p>
+            <h2 id="cityTitle">城市作品</h2>
+          </div>
+          <button class="realism-close" type="button" aria-label="关闭城市作品窗口" data-city-close>×</button>
+        </div>
+        <div class="realism-gallery city-gallery" aria-label="城市图片">
+          <img src="assets/city/city-01.png" alt="城市作品 1" />
+          <img src="assets/city/city-02.png" alt="城市作品 2" />
+          <img src="assets/city/city-03.png" alt="城市作品 3" />
+          <img src="assets/city/city-04.png" alt="城市作品 4" />
+          <img src="assets/city/city-05.png" alt="城市作品 5" />
+          <img src="assets/city/city-06.png" alt="城市作品 6" />
+        </div>
+      </section>
+    </div>
+
+    <div class="realism-dialog" id="productDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="productTitle">
+      <div class="realism-backdrop" data-product-close></div>
+      <section class="realism-panel" tabindex="-1">
+        <div class="realism-panel-header">
+          <div>
+            <p class="eyebrow">Product</p>
+            <h2 id="productTitle">产品作品</h2>
+          </div>
+          <button class="realism-close" type="button" aria-label="关闭产品作品窗口" data-product-close>×</button>
+        </div>
+        <div class="realism-gallery" aria-label="产品图片">
+          <img src="assets/portfolio/product-01.png" alt="香水产品海报" />
+          <img src="assets/portfolio/product-02.png" alt="腕表产品海报" />
+          <img src="assets/portfolio/product-03.png" alt="包袋产品海报" />
+          <img src="assets/portfolio/product-04.png" alt="口红产品海报" />
+          <img src="assets/portfolio/product-05.png" alt="洗发水产品海报" />
+          <img src="assets/portfolio/product-06.png" alt="运动鞋产品海报" />
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <span>© 2026 杨洋</span>
+      <a href="#home">回到顶部</a>
+    </footer>
+
+    <script src="script.js?v=20260516-contact-copy"></script>
+  </body>
+</html>
